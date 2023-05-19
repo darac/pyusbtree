@@ -1,0 +1,29 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "cSpell.words": [
+    "pyusbtree"
+  ],
+  "evenBetterToml.formatter.alignComments": true,
+  "evenBetterToml.formatter.alignEntries": true,
+  "evenBetterToml.formatter.arrayAutoCollapse": true,
+  "evenBetterToml.formatter.arrayAutoExpand": true,
+  "evenBetterToml.formatter.arrayTrailingComma": true,
+  "evenBetterToml.formatter.indentEntries": true,
+  "evenBetterToml.formatter.indentTables": true,
+  "evenBetterToml.formatter.inlineTableExpand": true,
+  "evenBetterToml.formatter.reorderArrays": true,
+  "evenBetterToml.formatter.reorderKeys": true,
+  "mypy.runUsingActiveInterpreter": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.blackArgs": [
+    "--target-version",
+    "py310"
+  ],
+  "python.formatting.provider": "black",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "darac",
+    "projectKey": "darac_pyusbtree"
+  }
+}
