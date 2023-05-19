@@ -25,7 +25,6 @@
   repository = "https://github.com/darac/pyusbtree"
 
 
-
   [tool.poetry.urls]
     "Bug Tracker" = "https://github.com/darac/pyusbtree/issues"
 
@@ -35,9 +34,8 @@
 
 
   [tool.poetry.dependencies]
+    click  = "^8.1.3"
     python = "<3.12,>=3.8"
-
-    click = "^8.1.3"
 
 
   [tool.poetry.dev-dependencies]
@@ -60,11 +58,11 @@
     mypy                  = "^1.0.1"
     pre-commit            = "^3.1.1"
     pytest                = "^7.2.2"
-    pytest-cov            = "^3.0.0"
+    pytest-cov            = "^4.0.0"
     recommonmark          = "^0.7.1"
     safety                = "^2.4.0b1"
-    sphinx                = "^6.1.3"
-    watchdog              = { version = "^2.3.1", extras = ["watchmedo"] }
+    sphinx                = "^7.0.1"
+    watchdog              = { version = "^3.0.0", extras = ["watchmedo"] }
     xdoctest              = "^1.1.1"
 
   [tool.coverage.paths]

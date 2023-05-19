@@ -11,12 +11,12 @@ jobs:
     name: Linting
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.3.0
+      - uses: actions/checkout@v3.5.2
 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v4.5.0
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4.6.0
         with:
-          python-version: 3.8
+          python-version: 3.11
 
       - name: Linting
         run: |
@@ -33,7 +33,7 @@ jobs:
         python-version: ['3.8', '3.9', '3.10', '3.11']
       fail-fast: true
     steps:
-      - uses: actions/checkout@v3.3.0
+      - uses: actions/checkout@v3.5.2
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4.5.0
@@ -61,7 +61,7 @@ jobs:
         run: nox --force-color -s safety
 
       - name: Upload coverage data
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: coverage-data
           path: ".coverage.*"
@@ -70,7 +70,7 @@ jobs:
     needs: tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.3.0
+      - uses: actions/checkout@v3.5.2
       
       - name: Set up Python 3.8
         uses: actions/setup-python@v4.5.0
