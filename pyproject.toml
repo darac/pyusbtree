@@ -58,7 +58,7 @@
     mypy                  = "^1.0.1"
     pre-commit            = "^3.1.1"
     pytest                = "^7.2.2"
-    pytest-cov            = "^4.0.0"
+    pytest-cov            = "^4.1.0"
     recommonmark          = "^0.7.1"
     safety                = "^2.4.0b1"
     sphinx                = "^7.0.1"
